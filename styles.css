@@ -1,12 +1,113 @@
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
+/* ベーススタイル */
+body {
+  font-family: 'Yu Gothic UI', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
 }
 
+/* ヘッダー */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2rem 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+
+header p {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+/* セクション */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+section {
+  margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+section:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+/* セクションタイトル */
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid #999;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+/* リスト */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* ボックス */
+.bg-box {
+  background-color: #f9f9f9;
+  border-left: 4px solid #ccc;
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+}
+
+/* フッター */
+footer {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+/* アニメーション */
 @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* メディアクエリ（スマホ対応） */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  main {
+    padding: 2rem 1rem;
   }
 }
