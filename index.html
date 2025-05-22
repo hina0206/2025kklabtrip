@@ -5,51 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>北海道スマートシティ研修旅行企画</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
-  <header class="bg-blue-900 text-white py-6 shadow-lg">
+<body class="bg-white text-gray-800 font-sans" style="font-family: 'Noto Sans JP', sans-serif;">
+  <header class="bg-gray-900 text-white py-6 shadow">
     <div class="container mx-auto px-4">
       <h1 class="text-3xl font-bold">北海道スマートシティ研修旅行</h1>
       <p class="text-sm">KUBOTA AGRI FRONT & 札幌市内の未来を体感</p>
     </div>
   </header>
 
-  <main class="container mx-auto px-4 py-8 space-y-12">
-    <section class="fade-in">
-      <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2">訪問先の概要と選定理由</h2>
-      <p class="mt-2">KUBOTA AGRI FRONT（Fビレッジ内）は、最先端のスマート農業技術を紹介する施設で、ICTを活用した農業の未来像を学べる点から、情報系のゼミとして非常に価値のある見学先です。さらに札幌市内は都市型のスマートシティ実装例も豊富で、都市と農業の両面から学べるバランスの良い選定です。</p>
-    </section>
-
-    <section class="fade-in">
-      <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2">見学内容</h2>
-      <ul class="list-disc list-inside mt-2 space-y-1">
-        <li>KUBOTA AGRI FRONTでのスマート農業体験ツアー</li>
-        <li>スタッフへのインタビュー（質問事前準備）</li>
-        <li>札幌市内の創世スクエア周辺を歩きながらスマート街づくり観察</li>
-        <li>さっぽろ創世1.1.1区（デジタル案内、都市設計）観察</li>
-      </ul>
-    </section>
-
-    <section class="fade-in">
-      <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2">スケジュール案（2泊3日）</h2>
-      <div class="bg-white rounded-lg shadow p-4">
-        <ul class="space-y-2">
-          <li><strong>1日目：</strong>名古屋→新千歳（飛行機）→札幌着／市内観察・夕食</li>
-          <li><strong>2日目：</strong>Fビレッジ（KUBOTA AGRI FRONT）見学→札幌へ戻り自由時間</li>
-          <li><strong>3日目：</strong>創世スクエア周辺調査→昼食後、帰路へ</li>
-        </ul>
+  <main class="container mx-auto px-4 py-8 space-y-16">
+    <section class="relative h-64 bg-cover bg-center rounded-lg shadow" style="background-image: url('https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <h2 class="text-white text-3xl font-bold">未来の北海道へ</h2>
       </div>
     </section>
 
-    <section class="fade-in">
-      <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2">学習成果</h2>
-      <p class="mt-2">スマート農業と都市スマート化の現場を両方体験することで、ICTが社会にどう活用されているかを実感できます。現地の情報収集・インタビューを通じて、社会実装への課題意識も育成します。</p>
+    <section data-aos="fade-up">
+      <h2 class="text-2xl font-bold border-b-2 border-gray-700 pb-2">訪問先の概要と選定理由</h2>
+      <p class="mt-2 text-gray-700">KUBOTA AGRI FRONT（Fビレッジ内）は、最先端のスマート農業技術を紹介する施設で、ICTを活用した農業の未来像を学べる点から、情報系のゼミとして非常に価値のある見学先です。さらに札幌市内は都市型のスマートシティ実装例も豊富で、都市と農業の両面から学べるバランスの良い選定です。</p>
     </section>
 
-    <section class="fade-in">
-      <h2 class="text-2xl font-bold border-b-2 border-blue-500 pb-2">費用概算（1人あたり）</h2>
-      <ul class="list-disc list-inside mt-2 space-y-1">
+    <section data-aos="fade-up">
+      <h2 class="text-2xl font-bold border-b-2 border-gray-700 pb-2">見学内容</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+        <div class="bg-gray-50 rounded-lg shadow p-4 transition transform hover:scale-105">
+          <h3 class="font-semibold text-lg mb-2">KUBOTA AGRI FRONT</h3>
+          <p>スマート農業体験ツアーとスタッフへのインタビュー。</p>
+        </div>
+        <div class="bg-gray-50 rounded-lg shadow p-4 transition transform hover:scale-105">
+          <h3 class="font-semibold text-lg mb-2">創世スクエア周辺</h3>
+          <p>デジタル案内や都市設計を観察。</p>
+        </div>
+      </div>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2 class="text-2xl font-bold border-b-2 border-gray-700 pb-2">スケジュール案（2泊3日）</h2>
+      <ul class="space-y-2 bg-gray-50 rounded-lg p-4 shadow">
+        <li><strong>1日目：</strong>名古屋→新千歳（飛行機）→札幌着／市内観察・夕食</li>
+        <li><strong>2日目：</strong>Fビレッジ（KUBOTA AGRI FRONT）見学→札幌へ戻り自由時間</li>
+        <li><strong>3日目：</strong>創世スクエア周辺調査→昼食後、帰路へ</li>
+      </ul>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2 class="text-2xl font-bold border-b-2 border-gray-700 pb-2">学習成果</h2>
+      <p class="mt-2 text-gray-700">スマート農業と都市スマート化の現場を両方体験することで、ICTが社会にどう活用されているかを実感できます。現地の情報収集・インタビューを通じて、社会実装への課題意識も育成します。</p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2 class="text-2xl font-bold border-b-2 border-gray-700 pb-2">費用概算（1人あたり）</h2>
+      <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
         <li>往復航空券：35,000円（LCC想定）</li>
         <li>宿泊費：10,000円×2泊＝20,000円</li>
         <li>食費・交通費：10,000円</li>
@@ -58,22 +68,15 @@
     </section>
   </main>
 
-  <footer class="bg-blue-900 text-white text-center py-4">
-    <p class="text-sm">名古屋市立大学 情報系ゼミ｜研修旅行企画 by ひなた</p>
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p class="text-sm">名古屋市立大学 河合勝彦ゼミ｜研修旅行企画 by ひなた</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    // スクロール時にアニメーションを発火させる処理
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-in');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.fade-in').forEach(el => {
-      observer.observe(el);
+    AOS.init({
+      duration: 800,
+      once: true
     });
   </script>
 </body>
