@@ -4,21 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>北海道スマートシティ研修旅行企画</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>北海道スマートシティ研修旅行</h1>
-    <p>KUBOTA AGRI FRONT & 札幌市内の未来を体感</p>
+    <h1 class="slide-in">北海道スマートシティ研修旅行</h1>
+    <p class="slide-in delay-1">KUBOTA AGRI FRONT & 札幌市内の未来を体感</p>
   </header>
 
   <main>
-    <section class="fade-in">
+    <section class="slide-in">
       <h2>訪問先の概要と選定理由</h2>
       <p>KUBOTA AGRI FRONT（Fビレッジ内）は、最先端のスマート農業技術を紹介する施設で、ICTを活用した農業の未来像を学べる点から、情報系のゼミとして非常に価値のある見学先です。さらに札幌市内は都市型のスマートシティ実装例も豊富で、都市と農業の両面から学べるバランスの良い選定です。</p>
     </section>
 
-    <section class="fade-in">
+    <section class="slide-in delay-1">
       <h2>見学内容</h2>
       <ul>
         <li>KUBOTA AGRI FRONTでのスマート農業体験ツアー</li>
@@ -28,7 +28,7 @@
       </ul>
     </section>
 
-    <section class="fade-in">
+    <section class="slide-in delay-2">
       <h2>スケジュール案（2泊3日）</h2>
       <div class="bg-box">
         <ul>
@@ -39,12 +39,12 @@
       </div>
     </section>
 
-    <section class="fade-in">
+    <section class="slide-in delay-3">
       <h2>学習成果</h2>
       <p>スマート農業と都市スマート化の現場を両方体験することで、ICTが社会にどう活用されているかを実感できます。現地の情報収集・インタビューを通じて、社会実装への課題意識も育成します。</p>
     </section>
 
-    <section class="fade-in">
+    <section class="slide-in delay-4">
       <h2>費用概算（1人あたり）</h2>
       <ul>
         <li>往復航空券：35,000円（LCC想定）</li>
@@ -55,7 +55,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="slide-in delay-5">
     <p>名古屋市立大学 情報系ゼミ｜研修旅行企画 by ひなた</p>
   </footer>
 
@@ -63,12 +63,12 @@
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.style.animationPlayState = 'running';
+          entry.target.classList.add('appear');
         }
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('.fade-in').forEach(el => {
+    document.querySelectorAll('.slide-in').forEach(el => {
       observer.observe(el);
     });
   </script>
